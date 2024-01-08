@@ -1,11 +1,17 @@
+import MovieImage from "./movie.png";
 import styles from "./NaoEncontrada.module.css";
 
 function NaoEncontrada() {
   return (
-    <section className={styles.container}>
-      <h2>Ops!!</h2>
+    <div>
+      <h2>Oops!!</h2>
       <p>O conteúdo que você procura não foi encontrado!!</p>
-    </section>
+      <img
+        src={MovieImage}
+        alt="Imagem não encontrada"
+        className={styles.imagem}
+      />
+    </div>
   );
 }
 
